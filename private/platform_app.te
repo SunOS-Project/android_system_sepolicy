@@ -133,6 +133,9 @@ get_prop(platform_app, qemu_hw_prop)
 # allow platform apps to read sys.boot.reason.last
 get_prop(platform_app, last_boot_reason_prop)
 
+# Launcher apps read pm.archiving.enabled
+get_prop(platform_app, pm_archiving_enabled_prop)
+
 # allow platform apps to create symbolic link
 allow platform_app app_data_file:lnk_file create_file_perms;
 
